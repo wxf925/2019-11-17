@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    let obj = {
+        name: '小明',
+        age: 18,
+        say: '好好学习，天天向上'
+    }
+    let str = '我的名字叫${name},年龄是${age}岁,我想说:${say}';
+    let i = 0;
+    let ary = ['壹', '贰', '叁']
+    let s = str.replace(/\${(\w+)}/g, (...arg) => {
+        let [, key] = arg;
+        return obj[key];
+        return ary[i++];
+    });
+    console.log(s);
+
+
+
+
+
+
+
+</script>
+
+</html>
